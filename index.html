@@ -6,6 +6,20 @@
 </head>
 
 <body>
+<nav>
+    <div class="logo">Aparna</div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
 <header class="hero">
 
@@ -29,7 +43,7 @@ I love programming and web development.
 
 </header>
 
-<section>
+<section id="about">
 
 <h2>About Me</h2><br>
 
@@ -43,7 +57,7 @@ Hi, I'm Aparna, an MCA student with a B.Sc. Mathematics background.
 
 </section>
 
-<section>
+<section id="skills">
 
 <h2>Skills</h2><br>
 
@@ -63,7 +77,7 @@ Hi, I'm Aparna, an MCA student with a B.Sc. Mathematics background.
 
 </section>
 
-<section>
+<section id="projects">
 
 <h2>Projects</h2><br>
 
@@ -74,19 +88,24 @@ Hi, I'm Aparna, an MCA student with a B.Sc. Mathematics background.
 </section>
 <section id="contact">
         <h2>Contact Me</h2>
+<form id="contactForm">
 
-        <form>
-            <label>Name:</label><br>
-            <input type="text" placeholder="Enter your name"><br><br>
+    <label>Name:</label><br>
+    <input type="text" id="name" placeholder="Enter your name"><br><br>
 
-            <label>Email:</label><br>
-            <input type="email" placeholder="Enter your email"><br><br>
+    <label>Email:</label><br>
+    <input type="email" id="email" placeholder="Enter your email"><br><br>
 
-            
+    <label>Message:</label><br>
+    <textarea id="message"></textarea><br><br>
 
-            <button type="submit">Send Message</button>
-        </form>
+    <button type="submit">Send Message</button>
+
+</form>
+        
     </section>
+<script src="script.js"></script>
 
 </body>
 </html>
+
